@@ -28,18 +28,6 @@ Citizen.CreateThread(function()
 			x, y, z = v[1], v[2], v[3]
 			radius = v[4]
 
-			blip = AddBlipForCoord(x, y, z, radius)
-			radiusBlip = AddBlipForRadius(x, y, z, radius)
-			SetBlipSprite(blip, 269)
-			SetBlipAsShortRange(blip, true)
-			SetBlipColour(blip, 60)
-			SetBlipScale(blip, 1.0)
-			BeginTextCommandSetBlipName('STRING')
-			AddTextComponentString("SafeZone")
-			EndTextCommandSetBlipName(blip)
-			SetBlipAlpha(radiusBlip, 80)
-			SetBlipColour(radiusBlip, 2)
-
 			if(Vdist(x, y, z,px,py,pz) < radius)then
 				inSafeZone = true
 				safeZone = i
