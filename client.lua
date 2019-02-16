@@ -88,13 +88,13 @@ Citizen.CreateThread(function()
             SetEntityProofs(GetPlayerPed(-1), true, true, true, true, true, true, true, true)
             SetEntityOnlyDamagedByPlayer(GetPlayerPed(-1), false)
             SetEntityCanBeDamaged(GetPlayerPed(-1), false)
-        --[[else
+        else
             SetEntityInvincible(GetPlayerPed(-1), false)
             SetPlayerInvincible(PlayerId(), false)
             ClearPedLastWeaponDamage(GetPlayerPed(-1))
             SetEntityProofs(GetPlayerPed(-1), false, false, false, false, false, false, false, false)
             SetEntityOnlyDamagedByPlayer(GetPlayerPed(-1), true)
-            SetEntityCanBeDamaged(GetPlayerPed(-1), true)]]
+            SetEntityCanBeDamaged(GetPlayerPed(-1), true)
 		end
 	end
 end)
